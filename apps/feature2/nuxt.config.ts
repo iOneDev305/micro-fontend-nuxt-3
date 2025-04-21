@@ -17,5 +17,13 @@ export default defineNuxtConfig({
   },
   server: {
     port: 3001
+  },
+  runtimeConfig: {
+    public: {
+      API_KEY: process.env.API_KEY || ''
+    }
+  },
+  alias: {
+    '@shared': '../../shared'
   }
 }) 

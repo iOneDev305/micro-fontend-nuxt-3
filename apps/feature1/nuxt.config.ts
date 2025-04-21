@@ -14,5 +14,13 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: true
+  },
+  runtimeConfig: {
+    public: {
+      API_KEY: process.env.API_KEY || ''
+    }
+  },
+  alias: {
+    '@shared': '../../shared'
   }
 }) 

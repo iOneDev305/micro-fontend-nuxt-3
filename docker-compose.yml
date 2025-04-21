@@ -10,6 +10,9 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      - PORT=3000
+      - NITRO_PORT=3000
+      - HOST=0.0.0.0
     networks:
       - micro-nuxt-network
 
@@ -22,6 +25,9 @@ services:
       - "3001:3001"
     environment:
       - NODE_ENV=production
+      - PORT=3001
+      - NITRO_PORT=3001
+      - HOST=0.0.0.0
     networks:
       - micro-nuxt-network
 

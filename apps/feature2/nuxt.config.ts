@@ -14,5 +14,8 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: true
+  },
+  server: {
+    port: 3001
   }
 }) 
